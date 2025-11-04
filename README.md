@@ -25,7 +25,7 @@ Follow the instructions in the link to install Virtualbox on your host OS: https
 Clone the repository
 
 ```bash
-git clone git@github.com:khazarih/wazuh-auto-deploy.git
+git clone https://github.com/khazarih/wazuh-auto-deploy.git
 ```
 
 Run vagrant up
