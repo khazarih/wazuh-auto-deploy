@@ -39,4 +39,15 @@ Once deployment has finished, you should see username and password in the termin
 Go to Wazuh dashboard in your browser and enter creds: 
 https://192.168.56.30
 
+---
+If you face an error metioning following line:
+```
+Stderr: VBoxManage: error: VT-x is being used by another hypervisor (VERR_VMX_IN_VMX_ROOT_MODE).
+```
+
+Try running the following commands to unload kvm modules:
+```bash
+sudo modprobe -r kvm_intel
+sudo modprobe -r kvm
+```
 
